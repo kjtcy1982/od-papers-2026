@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>組織開発 注目論文10選</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+    background:#0b0e17;
+    color:#e0e4ec;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ── hero ── */
+  .hero{
+    min-height:60vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    text-align:center;
+    padding:4rem 1.5rem;
+    background:linear-gradient(165deg,#0b0e17 0%,#141829 40%,#1a1040 70%,#0b0e17 100%);
+    position:relative;overflow:hidden;
+  }
+  .hero::before{
+    content:"";position:absolute;width:600px;height:600px;
+    background:radial-gradient(circle,rgba(99,102,241,.15) 0%,transparent 70%);
+    top:-200px;right:-100px;pointer-events:none;
+  }
+  .hero::after{
+    content:"";position:absolute;width:400px;height:400px;
+    background:radial-gradient(circle,rgba(168,85,247,.12) 0%,transparent 70%);
+    bottom:-100px;left:-80px;pointer-events:none;
+  }
+  .hero-badge{
+    display:inline-block;
+    padding:.35rem 1rem;border-radius:999px;
+    font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    background:rgba(99,102,241,.15);color:#818cf8;border:1px solid rgba(99,102,241,.3);
+    margin-bottom:1.5rem;
+  }
+  .hero h1{
+    font-size:clamp(2rem,5vw,3.4rem);
+    font-weight:800;letter-spacing:-.02em;
+    background:linear-gradient(135deg,#c7d2fe 0%,#a78bfa 50%,#818cf8 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+    margin-bottom:.8rem;
+  }
+  .hero p{
+    max-width:600px;font-size:1.05rem;color:#94a3b8;
+  }
+  .scroll-hint{
+    margin-top:2.5rem;animation:bounce 2s infinite;
+    color:#6366f1;font-size:1.4rem;cursor:pointer;
+  }
+  @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+
+  /* ── section common ── */
+  section{padding:4rem 1.5rem}
+  .section-title{
+    text-align:center;font-size:1.6rem;font-weight:700;
+    margin-bottom:.4rem;color:#e2e8f0;
+  }
+  .section-sub{
+    text-align:center;font-size:.9rem;color:#64748b;margin-bottom:3rem;
+  }
+
+  /* ── cards grid ── */
+  .cards{
+    max-width:1100px;margin:0 auto;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.6rem;
+  }
+  .card{
+    background:linear-gradient(145deg,#161b2e 0%,#111627 100%);
+    border:1px solid rgba(99,102,241,.12);
+    border-radius:16px;padding:2rem 1.8rem;
+    position:relative;overflow:hidden;
+    transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s ease,border-color .3s ease;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 50px rgba(99,102,241,.12);
+    border-color:rgba(99,102,241,.3);
+  }
+  .card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:linear-gradient(90deg,#6366f1,#a78bfa);
+    opacity:0;transition:opacity .3s ease;
+  }
+  .card:hover::before{opacity:1}
+  .card-num{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:36px;height:36px;border-radius:10px;
+    background:rgba(99,102,241,.12);color:#818cf8;
+    font-size:.85rem;font-weight:700;margin-bottom:1rem;
+  }
+  .card h3{
+    font-size:1.05rem;font-weight:700;line-height:1.5;
+    color:#e2e8f0;margin-bottom:.6rem;
+  }
+  .card-meta{
+    font-size:.8rem;color:#64748b;margin-bottom:1rem;line-height:1.5;
+  }
+  .card-meta span{color:#818cf8}
+  .card-body{
+    font-size:.88rem;color:#94a3b8;margin-bottom:1.4rem;line-height:1.8;
+  }
+  .card-body strong{color:#c7d2fe;font-weight:600}
+  .card-link{
+    display:inline-flex;align-items:center;gap:.4rem;
+    font-size:.82rem;font-weight:600;color:#818cf8;
+    text-decoration:none;padding:.45rem 1rem;border-radius:8px;
+    background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.2);
+    transition:background .2s ease,border-color .2s ease;
+  }
+  .card-link:hover{background:rgba(99,102,241,.2);border-color:rgba(99,102,241,.4)}
+  .card-link svg{width:14px;height:14px;transition:transform .2s ease}
+  .card-link:hover svg{transform:translateX(3px)}
+
+  /* ── trends ── */
+  .trends{
+    max-width:800px;margin:0 auto;
+    display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;
+  }
+  .trend-tag{
+    padding:.6rem 1.4rem;border-radius:999px;
+    font-size:.85rem;font-weight:600;
+    border:1px solid rgba(168,85,247,.25);
+    background:rgba(168,85,247,.08);color:#c4b5fd;
+    transition:background .2s ease,transform .2s ease,border-color .2s ease;
+    cursor:default;
+  }
+  .trend-tag:hover{
+    background:rgba(168,85,247,.18);border-color:rgba(168,85,247,.45);
+    transform:translateY(-2px);
+  }
+
+  /* ── footer ── */
+  footer{
+    text-align:center;padding:3rem 1.5rem;
+    font-size:.8rem;color:#475569;
+    border-top:1px solid rgba(99,102,241,.08);
+  }
+
+  /* ── responsive ── */
+  @media(max-width:700px){
+    .hero{min-height:50vh;padding:3rem 1.2rem}
+    section{padding:3rem 1rem}
+    .cards{grid-template-columns:1fr;gap:1.2rem}
+    .card{padding:1.5rem 1.3rem}
+  }
+
+  /* ── fade-in on scroll ── */
+  .card,.trend-tag{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+  .card.visible,.trend-tag.visible{opacity:1;transform:translateY(0)}
+  .card:hover.visible{transform:translateY(-6px)}
+</style>
+</head>
+<body>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <span class="hero-badge">2025-2026 Research Highlights</span>
+  <h1>組織開発 注目論文10選</h1>
+  <p>組織変革・チェンジマネジメント・組織デザインに関する近年の重要論文を厳選。研究のフロンティアを一望できるキュレーションです。</p>
+  <a href="#papers" class="scroll-hint" aria-label="論文一覧へスクロール">&#8595;</a>
+</section>
+
+<!-- ===== Papers ===== -->
+<section id="papers">
+  <h2 class="section-title">Selected Papers</h2>
+  <p class="section-sub">各カードをクリックして論文の詳細にアクセスできます</p>
+
+  <div class="cards">
+
+    <!-- 1 -->
+    <article class="card">
+      <div class="card-num">01</div>
+      <h3>Successful Organizational Change: Integrating the Management Practice and Scholarly Literatures</h3>
+      <div class="card-meta">
+        <span>Stouten, J., Rousseau, D. M., &amp; De Cremer, D.</span><br>
+        Academy of Management Annals, 12, 752-788 (2018)
+      </div>
+      <div class="card-body">
+        実務家向け変革モデルと学術研究を統合し、<strong>計画的組織変革の成功に向けたエビデンスに基づく10のステップ</strong>を提示。Kotter モデルなど広く使われるフレームワークの多くが専門家の意見に依拠しており、学術的エビデンスとのギャップを指摘した包括的レビュー。
+      </div>
+      <a class="card-link" href="https://journals.aom.org/doi/10.5465/annals.2016.0095" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 2 -->
+    <article class="card">
+      <div class="card-num">02</div>
+      <h3>A Systematic Review of the Literature on Digital Transformation</h3>
+      <div class="card-meta">
+        <span>Hanelt, A., Bohnsack, R., Marz, D., &amp; Antunes Marante, C.</span><br>
+        Journal of Management Studies, 58(5), 1159-1197 (2021)
+      </div>
+      <div class="card-body">
+        279本の論文を体系的にレビューし、DXが組織変革に与える影響を分析。DXを通じて企業は<strong>継続的適応を可能にする「可変的組織デザイン」</strong>へ移行しつつあることを示し、従来の組織変革フレームワークではDXの本質を部分的にしか捉えられないと指摘。
+      </div>
+      <a class="card-link" href="https://onlinelibrary.wiley.com/doi/10.1111/joms.12639" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 3 -->
+    <article class="card">
+      <div class="card-num">03</div>
+      <h3>Reactions Towards Organizational Change: A Systematic Literature Review</h3>
+      <div class="card-meta">
+        <span>Khaw, K.W., Alnoor, A., AL-Abrrow, H., Tiberius, V., Ganesan, Y., &amp; Atshan, N.A.</span><br>
+        Current Psychology (2022)
+      </div>
+      <div class="card-body">
+        79本の査読付き論文を分析し、組織変革に対する個人・組織レベルの反応を体系化。反応を<strong>「発言」「離脱」「無視」「忠誠」の4パターン</strong>に分類し、変革型リーダーシップが受容を促進すること、否定的反応を「建設的批判」として再解釈する視座を提示。
+      </div>
+      <a class="card-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9006211/" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 4 -->
+    <article class="card">
+      <div class="card-num">04</div>
+      <h3>Change Management: From Theory to Practice</h3>
+      <div class="card-meta">
+        <span>Phillips, J. &amp; Klein, J.D.</span><br>
+        TechTrends, 67(1), 189-197 (2022)
+      </div>
+      <div class="card-body">
+        16のチェンジマネジメントモデルから15の共通戦略を抽出し、49名の実務家を調査。最重要の5戦略は<strong>「コミュニケーション」「ステークホルダーの巻き込み」「組織文化への配慮」「ミッション・ビジョンとの整合」「インセンティブ」</strong>。学術的推奨と実務家行動の顕著なギャップも発見。
+      </div>
+      <a class="card-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9462626/" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 5 -->
+    <article class="card">
+      <div class="card-num">05</div>
+      <h3>Organizational Development as Generative Entrenchment</h3>
+      <div class="card-meta">
+        <span>Moser, C. &amp; Smaldino, P.E.</span><br>
+        Entropy, 24(7), 879 (2022)
+      </div>
+      <div class="card-body">
+        発生生物学の「生成的固着（generative entrenchment）」概念を組織開発に応用した理論論文。<strong>初期段階の構造的決定が後の組織成長を制約するメカニズム</strong>を提示。成功した組織テンプレートが業界を超えて模倣される「文化的伝達」プロセスも解説し、進化論的視点から組織構造の収斂を説明。
+      </div>
+      <a class="card-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9318524/" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 6 -->
+    <article class="card">
+      <div class="card-num">06</div>
+      <h3>Organizational Learning and Innovation: A Bibliometric Analysis</h3>
+      <div class="card-meta">
+        <span>Hael, M., Belhaj, F.A., &amp; Zhang, H.</span><br>
+        Heliyon, 10(11) (2024)
+      </div>
+      <div class="card-body">
+        1982〜2023年の773本の論文を計量書誌学的に分析。組織学習・イノベーションと<strong>ナレッジマネジメント、吸収能力、変革型リーダーシップ、ダイナミック・ケイパビリティ</strong>など8つの関連概念との強い結びつきを発見。近年はイノベーション成果や両利き経営、ビジネスモデル革新に注目が移行。
+      </div>
+      <a class="card-link" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11152712/" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 7 -->
+    <article class="card">
+      <div class="card-num">07</div>
+      <h3>The Determinants of Organizational Change Management Success</h3>
+      <div class="card-meta">
+        <span>Errida, A. &amp; Lotfi, B.</span><br>
+        International Journal of Engineering Business Management, 13 (2021)
+      </div>
+      <div class="card-body">
+        37の組織変革モデルを詳細に分析し、成功要因を<strong>12カテゴリに整理</strong>。モロッコの建設企業2社の変革事例で実証的に検証。文献レビューと実践的アクションリサーチを組み合わせ、チェンジマネジメント成功要因の統合的フレームワークを提供。
+      </div>
+      <a class="card-link" href="https://journals.sagepub.com/doi/10.1177/18479790211016273" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 8 -->
+    <article class="card">
+      <div class="card-num">08</div>
+      <h3>The Psychological Conditions for Employee Engagement in Organizational Change</h3>
+      <div class="card-meta">
+        <span>Frontiers in Psychology (2023)</span>
+      </div>
+      <div class="card-body">
+        組織変革における従業員エンゲージメントの心理的条件を検証。<strong>変革関連の自己効力感、心理的安全性、仕事の有意味感</strong>が変革エンゲージメントに直接効果をもち、分散の88%を説明。心理的安全性が高い環境では従業員が革新的行動に積極的に取り組むことを実証。
+      </div>
+      <a class="card-link" href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1071924/full" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 9 -->
+    <article class="card">
+      <div class="card-num">09</div>
+      <h3>Organization Design: Current Insights and Future Research Directions</h3>
+      <div class="card-meta">
+        <span>Joseph, J. &amp; Sengul, M.</span><br>
+        Journal of Management, 51(1) (2025)
+      </div>
+      <div class="card-body">
+        2000〜2023年の組織デザイン研究を包括的にレビュー。<strong>「構成」「統制」「方向づけ」「調整」の4つの主要アプローチ</strong>を特定。<strong>AIと組織的意思決定、フラット組織、複数目標の追求</strong>など新興領域を指摘し、組織デザインの理論的基盤を再編。
+      </div>
+      <a class="card-link" href="https://journals.sagepub.com/doi/10.1177/01492063241271242" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+    <!-- 10 -->
+    <article class="card">
+      <div class="card-num">10</div>
+      <h3>OD Consulting as a Catalyst for Change</h3>
+      <div class="card-meta">
+        <span>Dryzin-Amit, Y.</span><br>
+        Journal of Applied Behavioral Science (2025)
+      </div>
+      <div class="card-body">
+        イスラエルの大規模公的組織における6年間の縦断的研究（2018〜2024年、67回のインタビューとフィールド観察）。ODコンサルティングが持続的変革を促進する<strong>3つのメカニズム</strong>を特定：(1) 適応的空間の創出、(2) 創発的能力の体系的開発、(3) システム的統合の達成。構成主義的グラウンデッド・セオリーによる質的研究。
+      </div>
+      <a class="card-link" href="https://journals.sagepub.com/doi/10.1177/00218863251376151" target="_blank" rel="noopener">
+        論文を読む <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h8.69L10.22 7.03a.75.75 0 011.06-1.06l3.5 3.5a.75.75 0 010 1.06l-3.5 3.5a.75.75 0 01-1.06-1.06l2.22-2.22H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+      </a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===== Trends ===== -->
+<section>
+  <h2 class="section-title">Research Trends</h2>
+  <p class="section-sub">近年の組織開発研究を貫く5つのキーワード</p>
+  <div class="trends">
+    <span class="trend-tag">DX &times; 組織変革</span>
+    <span class="trend-tag">心理的安全性 &amp; エンゲージメント</span>
+    <span class="trend-tag">エビデンスベースド変革管理</span>
+    <span class="trend-tag">AI &amp; フラット組織</span>
+    <span class="trend-tag">進化理論 &amp; 複雑系科学</span>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <p>作成日：2026-02-23 &#124; 組織開発 注目論文10選</p>
+</footer>
+
+<!-- ===== Scroll Animation ===== -->
+<script>
+(function(){
+  var els=document.querySelectorAll('.card,.trend-tag');
+  if(!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('visible')});return;
+  }
+  var obs=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('visible');obs.unobserve(en.target)}
+    });
+  },{threshold:0.08});
+  els.forEach(function(e){obs.observe(e)});
+})();
+</script>
+
+</body>
+</html>
