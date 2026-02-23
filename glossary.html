@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用語集 | 組織開発 注目論文10選</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;background:#0b0e17;color:#e0e4ec;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .nav{position:sticky;top:0;z-index:100;background:rgba(11,14,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,.1);padding:.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+  .nav a{color:#818cf8;text-decoration:none;font-size:.85rem;font-weight:600;display:inline-flex;align-items:center;gap:.3rem;transition:color .2s}
+  .nav a:hover{color:#a78bfa}
+  .page-hero{max-width:900px;margin:0 auto;padding:3rem 1.5rem 2rem;text-align:center;position:relative}
+  .page-hero::before{content:"";position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%);top:-200px;left:50%;transform:translateX(-50%);pointer-events:none}
+  .page-badge{display:inline-block;padding:.35rem 1rem;border-radius:999px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(99,102,241,.15);color:#818cf8;border:1px solid rgba(99,102,241,.3);margin-bottom:1.2rem}
+  .page-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;background:linear-gradient(135deg,#c7d2fe 0%,#a78bfa 50%,#818cf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem}
+  .page-sub{font-size:1rem;color:#94a3b8;max-width:600px;margin:0 auto}
+  .glossary{max-width:800px;margin:0 auto;padding:2rem 1.5rem 3rem}
+  .term{margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(99,102,241,.08)}
+  .term:last-child{border-bottom:none}
+  .term-name{font-size:1.05rem;font-weight:700;color:#e2e8f0;margin-bottom:.2rem}
+  .term-en{font-size:.82rem;color:#818cf8;margin-bottom:.6rem}
+  .term-desc{font-size:.92rem;color:#94a3b8;line-height:1.9}
+  .term-desc strong{color:#c7d2fe;font-weight:600}
+  .term-ref{font-size:.8rem;color:#64748b;margin-top:.5rem}
+  .term-ref a{color:#818cf8;text-decoration:none}
+  .term-ref a:hover{text-decoration:underline}
+  .nav-links{max-width:800px;margin:0 auto;padding:0 1.5rem 3rem;display:flex;flex-wrap:wrap;gap:.8rem}
+  .nav-link{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.2rem;border-radius:999px;font-size:.82rem;font-weight:600;text-decoration:none;border:1px solid rgba(99,102,241,.2);color:#818cf8;background:rgba(99,102,241,.06);transition:background .2s,border-color .2s}
+  .nav-link:hover{background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.4)}
+  footer{text-align:center;padding:3rem 1.5rem;font-size:.8rem;color:#475569;border-top:1px solid rgba(99,102,241,.08)}
+  @media(max-width:700px){.page-hero{padding:2rem 1.2rem 1.5rem}.glossary,.nav-links{padding-left:1.2rem;padding-right:1.2rem}.nav{padding:.7rem 1rem}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html">&larr; トップに戻る</a>
+  <a href="guide.html">実践家ガイド</a>
+</nav>
+
+<div class="page-hero">
+  <span class="page-badge">Glossary</span>
+  <h1 class="page-title">用語集</h1>
+  <p class="page-sub">論文に登場する主要な学術用語を、OD実践家向けにわかりやすく解説</p>
+</div>
+
+<div class="glossary">
+
+  <div class="term">
+    <div class="term-name">メタ分析</div>
+    <div class="term-en">Meta-analysis</div>
+    <div class="term-desc">複数の独立した研究結果を統計的に統合し、全体としての効果を推定する研究手法。<strong>個々の研究のバラつきを超えて「結局のところ何が言えるのか」</strong>を明らかにする。エビデンスの信頼性が高い方法とされる。</div>
+    <div class="term-ref">関連: <a href="papers/01.html">論文01</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">体系的文献レビュー（システマティックレビュー）</div>
+    <div class="term-en">Systematic Literature Review</div>
+    <div class="term-desc">特定のテーマに関する先行研究を、あらかじめ定めた基準に従って網羅的に収集・評価・統合する方法。個人的な好みでの論文選びを排し、<strong>偏りのない全体像を提供する</strong>ことを目的とする。</div>
+    <div class="term-ref">関連: <a href="papers/02.html">論文02</a>, <a href="papers/03.html">論文03</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">ビブリオメトリクス（計量書誌学）</div>
+    <div class="term-en">Bibliometrics</div>
+    <div class="term-desc">学術論文の出版パターン、引用関係、共著ネットワーク等を定量的に分析する手法。<strong>研究分野全体のトレンドや知識構造を「鳥の目」で俯瞰する</strong>ために使われる。</div>
+    <div class="term-ref">関連: <a href="papers/06.html">論文06</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">心理的安全性</div>
+    <div class="term-en">Psychological Safety</div>
+    <div class="term-desc">チームの中でリスクのある行動（質問する、失敗を認める、異論を唱える）をとっても<strong>対人関係上のリスクがないと感じられる共有された信念</strong>。エイミー・エドモンドソンが提唱。「仲良し」とは異なり、率直な議論ができる状態を指す。</div>
+    <div class="term-ref">関連: <a href="papers/03.html">論文03</a>, <a href="papers/08.html">論文08</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">変革型リーダーシップ</div>
+    <div class="term-en">Transformational Leadership</div>
+    <div class="term-desc">知的刺激、個別配慮、理想化された影響力、鼓舞的動機づけの4要素を通じて、<strong>フォロワーの意識を変革し、期待以上の成果を引き出す</strong>リーダーシップスタイル。バーナード・バスが理論化。</div>
+    <div class="term-ref">関連: <a href="papers/03.html">論文03</a>, <a href="papers/06.html">論文06</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">吸収能力</div>
+    <div class="term-en">Absorptive Capacity</div>
+    <div class="term-desc">組織が<strong>外部の新しい知識を認識し、取り込み、自社の活動に応用する能力</strong>。コーエン&レビンサールが提唱。学習する組織の基盤となる概念で、R&D投資や人材の多様性と関連が深い。</div>
+    <div class="term-ref">関連: <a href="papers/06.html">論文06</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">両利きの経営</div>
+    <div class="term-en">Organizational Ambidexterity</div>
+    <div class="term-desc">既存事業の深化（exploitation：効率化・改善）と新規事業の探索（exploration：実験・発見）を<strong>同時に追求する組織能力</strong>。短期的な利益と長期的なイノベーションのバランスが鍵。</div>
+    <div class="term-ref">関連: <a href="papers/06.html">論文06</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">ダイナミック・ケイパビリティ</div>
+    <div class="term-en">Dynamic Capabilities</div>
+    <div class="term-desc">環境の急速な変化に対応するために、<strong>組織の資源やプロセスを統合・構築・再構成する能力</strong>。ティースが提唱。「強みを持つ」だけでなく「強みを変え続ける力」を重視する概念。</div>
+    <div class="term-ref">関連: <a href="papers/06.html">論文06</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">生成的固着</div>
+    <div class="term-en">Generative Entrenchment</div>
+    <div class="term-desc">発生生物学由来の概念。初期段階の決定が後の発展の<strong>基盤（generative base）として機能し、変更が極めて困難になる</strong>現象。組織では、創業期の構造的決定が後の成長を制約するメカニズムとして応用される。</div>
+    <div class="term-ref">関連: <a href="papers/05.html">論文05</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">グラウンデッド・セオリー</div>
+    <div class="term-en">Grounded Theory</div>
+    <div class="term-desc">事前に仮説を設定するのではなく、<strong>収集したデータから帰納的に理論を構築する</strong>質的研究の方法論。グレーザーとストラウスが提唱。インタビューやフィールド観察のデータを体系的にコーディングし、現象を説明する理論を導出する。</div>
+    <div class="term-ref">関連: <a href="papers/10.html">論文10</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">構造方程式モデリング（SEM）</div>
+    <div class="term-en">Structural Equation Modeling</div>
+    <div class="term-desc">複数の変数間の因果関係を同時に検証する統計手法。<strong>「AがBに影響し、BがCに影響する」</strong>といった複雑な因果モデルを、アンケート等のデータから検証できる。心理学・経営学で広く使われる。</div>
+    <div class="term-ref">関連: <a href="papers/08.html">論文08</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">アクションリサーチ</div>
+    <div class="term-en">Action Research</div>
+    <div class="term-desc">研究者が現場の実践に<strong>参加しながら課題を分析し、介入と検証を繰り返す</strong>研究アプローチ。クルト・レヴィンが提唱。OD（組織開発）の方法論的基盤であり、「理論と実践の統合」を体現する手法。</div>
+    <div class="term-ref">関連: <a href="papers/07.html">論文07</a>, <a href="papers/10.html">論文10</a></div>
+  </div>
+
+  <div class="term">
+    <div class="term-name">変革エンゲージメント</div>
+    <div class="term-en">Change Engagement</div>
+    <div class="term-desc">組織変革に対する従業員の<strong>積極的・能動的な関与</strong>。日常業務へのエンゲージメントとは区別される概念で、変革プロセスに自発的にエネルギーを投入し、変革の推進に貢献する状態を指す。</div>
+    <div class="term-ref">関連: <a href="papers/08.html">論文08</a></div>
+  </div>
+
+</div>
+
+<div class="nav-links">
+  <a class="nav-link" href="index.html">&larr; 論文一覧</a>
+  <a class="nav-link" href="guide.html">実践家ガイド</a>
+</div>
+
+<footer>
+  <p style="margin-bottom:.4rem">組織開発 注目論文10選</p>
+  <p style="font-size:.75rem;color:#64748b">Curated by 土屋耕治 ／ TSUCHIYA, Koji (tsuchiya@nanzan-u.ac.jp)</p>
+</footer>
+
+</body>
+</html>

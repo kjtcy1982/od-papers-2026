@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>実践家ガイド | 組織開発 注目論文10選</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;background:#0b0e17;color:#e0e4ec;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .nav{position:sticky;top:0;z-index:100;background:rgba(11,14,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,.1);padding:.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+  .nav a{color:#818cf8;text-decoration:none;font-size:.85rem;font-weight:600;display:inline-flex;align-items:center;gap:.3rem;transition:color .2s}
+  .nav a:hover{color:#a78bfa}
+  .page-hero{max-width:900px;margin:0 auto;padding:3rem 1.5rem 2rem;text-align:center;position:relative}
+  .page-hero::before{content:"";position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%);top:-200px;left:50%;transform:translateX(-50%);pointer-events:none}
+  .page-badge{display:inline-block;padding:.35rem 1rem;border-radius:999px;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;background:rgba(99,102,241,.15);color:#818cf8;border:1px solid rgba(99,102,241,.3);margin-bottom:1.2rem}
+  .page-title{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;background:linear-gradient(135deg,#c7d2fe 0%,#a78bfa 50%,#818cf8 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:.6rem}
+  .page-sub{font-size:1rem;color:#94a3b8;max-width:600px;margin:0 auto}
+  .content{max-width:800px;margin:0 auto;padding:0 1.5rem}
+  .content h2{font-size:1.3rem;font-weight:700;color:#e2e8f0;margin:3rem 0 1.2rem;padding-bottom:.5rem;border-bottom:2px solid rgba(99,102,241,.15)}
+  .content h3{font-size:1.05rem;font-weight:700;color:#c7d2fe;margin:2rem 0 .8rem}
+  .content p{font-size:.95rem;color:#94a3b8;line-height:1.9;margin-bottom:1rem}
+  .content strong{color:#c7d2fe;font-weight:600}
+  .challenge{background:rgba(168,85,247,.06);border-left:3px solid rgba(168,85,247,.3);border-radius:0 12px 12px 0;padding:1.2rem 1.5rem;margin-bottom:1.5rem}
+  .challenge h4{font-size:.95rem;font-weight:700;color:#c4b5fd;margin-bottom:.5rem}
+  .challenge p{font-size:.9rem;margin-bottom:.4rem}
+  .challenge a{color:#818cf8;text-decoration:none;font-weight:600}
+  .challenge a:hover{text-decoration:underline}
+  .route{background:rgba(99,102,241,.06);border:1px solid rgba(99,102,241,.15);border-radius:14px;padding:1.5rem 1.8rem;margin-bottom:1.5rem}
+  .route h4{font-size:.95rem;font-weight:700;color:#818cf8;margin-bottom:.8rem}
+  .route ol{padding-left:1.2rem}
+  .route li{font-size:.9rem;color:#94a3b8;line-height:1.8;margin-bottom:.3rem}
+  .route li a{color:#818cf8;text-decoration:none;font-weight:600}
+  .route li a:hover{text-decoration:underline}
+  .route li strong{color:#c7d2fe}
+  .nav-links{max-width:800px;margin:2rem auto 0;padding:0 1.5rem 3rem;display:flex;flex-wrap:wrap;gap:.8rem}
+  .nav-link{display:inline-flex;align-items:center;gap:.4rem;padding:.5rem 1.2rem;border-radius:999px;font-size:.82rem;font-weight:600;text-decoration:none;border:1px solid rgba(99,102,241,.2);color:#818cf8;background:rgba(99,102,241,.06);transition:background .2s,border-color .2s}
+  .nav-link:hover{background:rgba(99,102,241,.15);border-color:rgba(99,102,241,.4)}
+  footer{text-align:center;padding:3rem 1.5rem;font-size:.8rem;color:#475569;border-top:1px solid rgba(99,102,241,.08)}
+  @media(max-width:700px){.page-hero{padding:2rem 1.2rem 1.5rem}.content,.nav-links{padding-left:1.2rem;padding-right:1.2rem}.nav{padding:.7rem 1rem}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html">&larr; トップに戻る</a>
+  <a href="glossary.html">用語集</a>
+</nav>
+
+<div class="page-hero">
+  <span class="page-badge">Practitioner's Guide</span>
+  <h1 class="page-title">実践家ガイド</h1>
+  <p class="page-sub">あなたの課題に合った論文を見つけ、研究知見を実務に活かすためのナビゲーション</p>
+</div>
+
+<div class="content">
+
+  <h2>お悩み別ガイド</h2>
+  <p>「いま直面している課題」から、読むべき論文を探せます。</p>
+
+  <div class="challenge">
+    <h4>変革プロジェクトがうまくいかない・計画の立て方がわからない</h4>
+    <p>まず <a href="papers/01.html">論文01</a> でエビデンスに基づく10ステップを確認。次に <a href="papers/04.html">論文04</a> で15の共通戦略をチェック。さらに <a href="papers/07.html">論文07</a> の12カテゴリで抜け漏れを点検。</p>
+  </div>
+
+  <div class="challenge">
+    <h4>チームが変革に抵抗している・沈黙している</h4>
+    <p><a href="papers/03.html">論文03</a> で反応の4パターンを理解し、「抵抗」を再解釈。<a href="papers/08.html">論文08</a> で心理的安全性・自己効力感の構築方法を学ぶ。</p>
+  </div>
+
+  <div class="challenge">
+    <h4>DX推進に伴う組織のあり方を見直したい</h4>
+    <p><a href="papers/02.html">論文02</a> で「可変的組織デザイン」の概念を理解。<a href="papers/09.html">論文09</a> でAI時代の組織デザイン4アプローチを確認。<a href="papers/06.html">論文06</a> で組織学習とイノベーションの関係を掘り下げる。</p>
+  </div>
+
+  <div class="challenge">
+    <h4>従業員のエンゲージメントが低い・変革疲れが見える</h4>
+    <p><a href="papers/08.html">論文08</a> で変革エンゲージメントの3条件（自己効力感・心理的安全性・有意味感）を把握。<a href="papers/03.html">論文03</a> で否定的反応を建設的に活用する視点を得る。</p>
+  </div>
+
+  <div class="challenge">
+    <h4>組織が「そもそも変わりにくい」理由を根本から理解したい</h4>
+    <p><a href="papers/05.html">論文05</a> の「生成的固着」概念で、初期構造が将来をいかに制約するかを理解。組織の構造的制約という視点から変革のアプローチを再考できる。</p>
+  </div>
+
+  <div class="challenge">
+    <h4>外部コンサルタントとの協働を効果的にしたい</h4>
+    <p><a href="papers/10.html">論文10</a> でODコンサルティングが変革を促す3つのメカニズム（適応的空間・創発的能力・システム統合）を把握し、協働の設計に活かす。</p>
+  </div>
+
+  <h2>まずはここから — 推奨リーディングルート</h2>
+
+  <div class="route">
+    <h4>ルートA：OD研究の全体像をつかむ（入門）</h4>
+    <ol>
+      <li><a href="papers/01.html">論文01</a> — <strong>変革の10ステップ</strong>で全体像を把握</li>
+      <li><a href="papers/04.html">論文04</a> — <strong>理論と実践のギャップ</strong>を理解</li>
+      <li><a href="papers/03.html">論文03</a> — <strong>変革への反応パターン</strong>を学ぶ</li>
+      <li><a href="papers/08.html">論文08</a> — <strong>心理的条件</strong>で巻き込み方を知る</li>
+    </ol>
+  </div>
+
+  <div class="route">
+    <h4>ルートB：DX時代の組織デザインを探る</h4>
+    <ol>
+      <li><a href="papers/02.html">論文02</a> — <strong>DXと組織変革</strong>の全体像</li>
+      <li><a href="papers/09.html">論文09</a> — <strong>組織デザインの4アプローチ</strong>とAIの影響</li>
+      <li><a href="papers/06.html">論文06</a> — <strong>組織学習とイノベーション</strong>の関連概念</li>
+    </ol>
+  </div>
+
+  <div class="route">
+    <h4>ルートC：変革の「なぜ」を深く理解する（上級）</h4>
+    <ol>
+      <li><a href="papers/05.html">論文05</a> — <strong>生成的固着</strong>：組織が変わりにくい根本メカニズム</li>
+      <li><a href="papers/10.html">論文10</a> — <strong>ODコンサルティング</strong>の6年間の縦断研究</li>
+      <li><a href="papers/07.html">論文07</a> — <strong>37モデルの統合</strong>：成功要因の全体像</li>
+    </ol>
+  </div>
+
+</div>
+
+<div class="nav-links">
+  <a class="nav-link" href="index.html">&larr; 論文一覧</a>
+  <a class="nav-link" href="glossary.html">用語集</a>
+</div>
+
+<footer>
+  <p style="margin-bottom:.4rem">組織開発 注目論文10選</p>
+  <p style="font-size:.75rem;color:#64748b">Curated by 土屋耕治 ／ TSUCHIYA, Koji (tsuchiya@nanzan-u.ac.jp)</p>
+</footer>
+
+</body>
+</html>

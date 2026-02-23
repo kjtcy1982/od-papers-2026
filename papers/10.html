@@ -31,6 +31,28 @@
   .paper-link:hover svg{transform:translateX(3px)}
   footer{text-align:center;padding:3rem 1.5rem;font-size:.8rem;color:#475569;border-top:1px solid rgba(99,102,241,.08)}
   @media(max-width:700px){.paper-hero{padding:2rem 1.2rem 1.5rem}.paper-section,.paper-tags,.paper-link-wrap{padding-left:1.2rem;padding-right:1.2rem}.nav{padding:.7rem 1rem}}
+
+  .quick-box{max-width:800px;margin:0 auto 2rem;padding:1.5rem 1.8rem;background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.18);border-radius:14px}
+  .quick-box h2{font-size:.95rem;font-weight:700;color:#818cf8;margin-bottom:.8rem}
+  .quick-box ul{list-style:none;padding:0}
+  .quick-box li{font-size:.9rem;color:#c7d2fe;line-height:1.8;padding:.3rem 0 .3rem 1.4rem;position:relative}
+  .quick-box li::before{content:"\25B8";position:absolute;left:0;color:#818cf8}
+  .scene-box{max-width:800px;margin:0 auto;padding:0 1.5rem 2rem}
+  .scene-box h2{font-size:1.1rem;font-weight:700;color:#c7d2fe;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid rgba(99,102,241,.15)}
+  .scene-box p{font-size:.92rem;color:#94a3b8;line-height:1.8;padding:.6rem 1rem;background:rgba(168,85,247,.06);border-left:3px solid rgba(168,85,247,.3);border-radius:0 8px 8px 0;margin-bottom:.6rem}
+  .checklist{max-width:800px;margin:0 auto;padding:0 1.5rem 2rem}
+  .checklist h2{font-size:1.1rem;font-weight:700;color:#c7d2fe;margin-bottom:.8rem;padding-bottom:.4rem;border-bottom:1px solid rgba(99,102,241,.15)}
+  .checklist ul{list-style:none;padding:0}
+  .checklist li{font-size:.92rem;color:#94a3b8;line-height:1.8;padding:.3rem 0 .3rem 1.8rem;position:relative}
+  .checklist li::before{content:"\2610";position:absolute;left:0;color:#818cf8;font-size:1.05rem}
+  .related{max-width:800px;margin:0 auto;padding:0 1.5rem 2.5rem}
+  .related h2{font-size:1.1rem;font-weight:700;color:#c7d2fe;margin-bottom:1rem;padding-bottom:.4rem;border-bottom:1px solid rgba(99,102,241,.15)}
+  .related-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem}
+  .related-card{display:block;padding:1.2rem;background:linear-gradient(145deg,#161b2e,#111627);border:1px solid rgba(99,102,241,.12);border-radius:12px;text-decoration:none;color:inherit;transition:transform .2s,border-color .2s}
+  .related-card:hover{transform:translateY(-3px);border-color:rgba(99,102,241,.3)}
+  .related-card .r-num{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:7px;background:rgba(99,102,241,.12);color:#818cf8;font-size:.72rem;font-weight:700;margin-bottom:.5rem}
+  .related-card h3{font-size:.85rem;font-weight:600;color:#e2e8f0;line-height:1.5}
+
 </style>
 </head>
 <body>
@@ -52,6 +74,15 @@
   </div>
 </div>
 
+
+<div class="quick-box">
+  <h2>3分でわかるポイント</h2>
+  <ul>
+    <li>ODコンサルティングが変革を促進する3つのメカニズムを特定</li>
+    <li>「適応的空間」の創出が安全な試行錯誤を可能にする</li>
+    <li>真に持続的な変革には長期的コミットメント（6年超）が不可欠</li>
+  </ul>
+</div>
 <section class="paper-section">
   <h2>研究の背景</h2>
   <p>組織開発（OD）コンサルティングは、変革を促進する重要な介入手法として広く実践されているが、<strong>ODコンサルタントが実際にどのようなメカニズムを通じて持続可能な変革を実現するのか</strong>については、実証的な研究が不足していた。特に、長期的な視点からODコンサルティングの効果と変革プロセスを追跡した研究はほとんど存在しなかった。</p>

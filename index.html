@@ -137,6 +137,28 @@
     transform:translateY(-2px);
   }
 
+  /* ── badges ── */
+  .card-badges{display:flex;gap:.4rem;margin-bottom:.8rem;flex-wrap:wrap}
+  .badge{font-size:.68rem;font-weight:600;padding:.2rem .6rem;border-radius:6px;white-space:nowrap}
+  .badge-practice{background:rgba(52,211,153,.12);color:#6ee7b7;border:1px solid rgba(52,211,153,.2)}
+  .badge-theory{background:rgba(251,191,36,.1);color:#fbbf24;border:1px solid rgba(251,191,36,.2)}
+  .badge-beginner{background:rgba(99,102,241,.1);color:#a5b4fc;border:1px solid rgba(99,102,241,.2)}
+  .badge-intermediate{background:rgba(168,85,247,.1);color:#c4b5fd;border:1px solid rgba(168,85,247,.2)}
+  .badge-advanced{background:rgba(244,63,94,.1);color:#fda4af;border:1px solid rgba(244,63,94,.2)}
+
+  /* ── practitioner nav ── */
+  .prac-nav{max-width:800px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem}
+  .prac-link{
+    display:inline-flex;align-items:center;gap:.5rem;
+    padding:.8rem 1.6rem;border-radius:12px;
+    font-size:.9rem;font-weight:600;text-decoration:none;
+    background:linear-gradient(145deg,#161b2e,#111627);
+    border:1px solid rgba(99,102,241,.15);color:#c7d2fe;
+    transition:transform .2s,border-color .2s,box-shadow .2s;
+  }
+  .prac-link:hover{transform:translateY(-3px);border-color:rgba(99,102,241,.35);box-shadow:0 8px 24px rgba(99,102,241,.1)}
+  .prac-icon{font-size:1.2rem}
+
   /* ── footer ── */
   footer{
     text-align:center;padding:3rem 1.5rem;
@@ -178,6 +200,7 @@
     <!-- 1 -->
     <a class="card" href="papers/01.html">
       <div class="card-num">01</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-beginner">入門</span></div>
       <h3>Successful Organizational Change: Integrating the Management Practice and Scholarly Literatures（組織変革の成功：実務と学術の統合）</h3>
       <div class="card-meta">
         <span>Stouten, J., Rousseau, D. M., &amp; De Cremer, D.</span><br>
@@ -194,6 +217,7 @@
     <!-- 2 -->
     <a class="card" href="papers/02.html">
       <div class="card-num">02</div>
+      <div class="card-badges"><span class="badge badge-theory">理論寄り</span><span class="badge badge-intermediate">中級</span></div>
       <h3>A Systematic Review of the Literature on Digital Transformation（デジタルトランスフォーメーション研究の体系的レビュー）</h3>
       <div class="card-meta">
         <span>Hanelt, A., Bohnsack, R., Marz, D., &amp; Antunes Marante, C.</span><br>
@@ -210,6 +234,7 @@
     <!-- 3 -->
     <a class="card" href="papers/03.html">
       <div class="card-num">03</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-beginner">入門</span></div>
       <h3>Reactions Towards Organizational Change: A Systematic Literature Review（組織変革に対する反応：体系的文献レビュー）</h3>
       <div class="card-meta">
         <span>Khaw, K.W., Alnoor, A., AL-Abrrow, H., Tiberius, V., Ganesan, Y., &amp; Atshan, N.A.</span><br>
@@ -226,6 +251,7 @@
     <!-- 4 -->
     <a class="card" href="papers/04.html">
       <div class="card-num">04</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-beginner">入門</span></div>
       <h3>Change Management: From Theory to Practice（チェンジマネジメント：理論から実践へ）</h3>
       <div class="card-meta">
         <span>Phillips, J. &amp; Klein, J.D.</span><br>
@@ -242,6 +268,7 @@
     <!-- 5 -->
     <a class="card" href="papers/05.html">
       <div class="card-num">05</div>
+      <div class="card-badges"><span class="badge badge-theory">理論寄り</span><span class="badge badge-advanced">上級</span></div>
       <h3>Organizational Development as Generative Entrenchment（生成的固着としての組織開発）</h3>
       <div class="card-meta">
         <span>Moser, C. &amp; Smaldino, P.E.</span><br>
@@ -258,6 +285,7 @@
     <!-- 6 -->
     <a class="card" href="papers/06.html">
       <div class="card-num">06</div>
+      <div class="card-badges"><span class="badge badge-theory">理論寄り</span><span class="badge badge-intermediate">中級</span></div>
       <h3>Organizational Learning and Innovation: A Bibliometric Analysis（組織学習とイノベーション：ビブリオメトリクス分析）</h3>
       <div class="card-meta">
         <span>Hael, M., Belhaj, F.A., &amp; Zhang, H.</span><br>
@@ -274,6 +302,7 @@
     <!-- 7 -->
     <a class="card" href="papers/07.html">
       <div class="card-num">07</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-beginner">入門</span></div>
       <h3>The Determinants of Organizational Change Management Success（組織変革管理の成功要因）</h3>
       <div class="card-meta">
         <span>Errida, A. &amp; Lotfi, B.</span><br>
@@ -290,6 +319,7 @@
     <!-- 8 -->
     <a class="card" href="papers/08.html">
       <div class="card-num">08</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-intermediate">中級</span></div>
       <h3>The Psychological Conditions for Employee Engagement in Organizational Change（組織変革における従業員エンゲージメントの心理的条件）</h3>
       <div class="card-meta">
         <span>Frontiers in Psychology (2023)</span>
@@ -305,6 +335,7 @@
     <!-- 9 -->
     <a class="card" href="papers/09.html">
       <div class="card-num">09</div>
+      <div class="card-badges"><span class="badge badge-theory">理論寄り</span><span class="badge badge-intermediate">中級</span></div>
       <h3>Organization Design: Current Insights and Future Research Directions（組織デザイン：現在の知見と今後の研究方向）</h3>
       <div class="card-meta">
         <span>Joseph, J. &amp; Sengul, M.</span><br>
@@ -321,6 +352,7 @@
     <!-- 10 -->
     <a class="card" href="papers/10.html">
       <div class="card-num">10</div>
+      <div class="card-badges"><span class="badge badge-practice">実践向け</span><span class="badge badge-intermediate">中級</span></div>
       <h3>OD Consulting as a Catalyst for Change（変革の触媒としてのODコンサルティング）</h3>
       <div class="card-meta">
         <span>Dryzin-Amit, Y.</span><br>
@@ -334,6 +366,20 @@
       </span>
     </a>
 
+  </div>
+</section>
+
+<!-- ===== For Practitioners ===== -->
+<section>
+  <h2 class="section-title">For Practitioners</h2>
+  <p class="section-sub">OD実践家が研究知見を活用するためのツール</p>
+  <div class="prac-nav">
+    <a class="prac-link" href="guide.html">
+      <span class="prac-icon">&#9776;</span> 実践家ガイド — お悩み別に論文を探す
+    </a>
+    <a class="prac-link" href="glossary.html">
+      <span class="prac-icon">&#128218;</span> 用語集 — 学術用語をわかりやすく
+    </a>
   </div>
 </section>
 
