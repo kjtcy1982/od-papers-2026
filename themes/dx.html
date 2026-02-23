@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DX × 組織変革 | 組織開発 注目論文10選</title>
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;background:#0b0e17;color:#e0e4ec;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .nav{position:sticky;top:0;z-index:100;background:rgba(11,14,23,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(99,102,241,.1);padding:.8rem 1.5rem;display:flex;align-items:center;justify-content:space-between}
+  .nav a{color:#818cf8;text-decoration:none;font-size:.85rem;font-weight:600;display:inline-flex;align-items:center;gap:.3rem;transition:color .2s}
+  .nav a:hover{color:#a78bfa}
+  .theme-hero{
+    max-width:900px;margin:0 auto;padding:3rem 1.5rem 2rem;text-align:center;
+    position:relative;
+  }
+  .theme-hero::before{
+    content:"";position:absolute;width:500px;height:500px;
+    background:radial-gradient(circle,rgba(99,102,241,.1) 0%,transparent 70%);
+    top:-200px;left:50%;transform:translateX(-50%);pointer-events:none;
+  }
+  .theme-badge{
+    display:inline-block;padding:.35rem 1rem;border-radius:999px;
+    font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+    background:rgba(168,85,247,.12);color:#c4b5fd;border:1px solid rgba(168,85,247,.3);
+    margin-bottom:1.2rem;
+  }
+  .theme-title{
+    font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;
+    background:linear-gradient(135deg,#c7d2fe 0%,#a78bfa 50%,#818cf8 100%);
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    margin-bottom:2rem;
+  }
+  .theme-desc{max-width:750px;margin:0 auto;padding:0 1.5rem 3rem}
+  .theme-desc p{font-size:.95rem;color:#94a3b8;line-height:1.9;margin-bottom:1.2rem}
+  .theme-desc strong{color:#c7d2fe;font-weight:600}
+  .theme-papers-title{
+    max-width:900px;margin:0 auto;padding:0 1.5rem .8rem;
+    font-size:1.1rem;font-weight:700;color:#c7d2fe;
+  }
+  .theme-cards{
+    max-width:900px;margin:0 auto;padding:0 1.5rem 3rem;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.4rem;
+  }
+  .card{
+    background:linear-gradient(145deg,#161b2e 0%,#111627 100%);
+    border:1px solid rgba(99,102,241,.12);border-radius:16px;padding:1.8rem 1.6rem;
+    text-decoration:none;color:inherit;display:block;
+    transition:transform .3s cubic-bezier(.22,1,.36,1),box-shadow .3s ease,border-color .3s ease;
+    position:relative;overflow:hidden;
+  }
+  .card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(99,102,241,.12);border-color:rgba(99,102,241,.3)}
+  .card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#6366f1,#a78bfa);opacity:0;transition:opacity .3s ease}
+  .card:hover::before{opacity:1}
+  .card-num{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:8px;background:rgba(99,102,241,.12);color:#818cf8;font-size:.78rem;font-weight:700;margin-bottom:.8rem}
+  .card h3{font-size:.98rem;font-weight:700;line-height:1.5;color:#e2e8f0;margin-bottom:.5rem}
+  .card-meta{font-size:.78rem;color:#64748b;margin-bottom:.8rem;line-height:1.5}
+  .card-meta span{color:#818cf8}
+  .card-body{font-size:.85rem;color:#94a3b8;line-height:1.8}
+  .card-body strong{color:#c7d2fe;font-weight:600}
+  footer{text-align:center;padding:3rem 1.5rem;font-size:.8rem;color:#475569;border-top:1px solid rgba(99,102,241,.08)}
+  @media(max-width:700px){
+    .theme-hero{padding:2rem 1.2rem 1.5rem}
+    .theme-desc{padding-left:1.2rem;padding-right:1.2rem}
+    .theme-cards{grid-template-columns:1fr;padding-left:1.2rem;padding-right:1.2rem}
+    .nav{padding:.7rem 1rem}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html">&larr; トップに戻る</a>
+</nav>
+
+<div class="theme-hero">
+  <span class="theme-badge">Theme</span>
+  <h1 class="theme-title">DX × 組織変革</h1>
+</div>
+
+<div class="theme-desc">
+  <p>デジタルトランスフォーメーション（DX）は、単なる技術導入にとどまらず、組織の構造・文化・戦略のあり方そのものを根本的に変革する力を持つ。近年の研究は、DXが<strong>従来の断続的な変革モデルを超えた、継続的適応のパラダイム</strong>を組織にもたらしていることを示している。</p>
+  <p>デジタル技術の浸透により、組織の境界は流動化し、ビジネスエコシステムへの組み込みが加速している。組織学習とイノベーションの関係も再定義されつつあり、ナレッジマネジメントやダイナミック・ケイパビリティといった概念がDX文脈で新たな重要性を獲得している。</p>
+  <p>このテーマに該当する論文群は、DXが組織変革のフレームワークにどのような再考を迫り、また組織デザインの未来にどのような可能性を開くのかを多角的に探究している。</p>
+</div>
+
+<h2 class="theme-papers-title">関連論文</h2>
+
+<div class="theme-cards">
+
+  <a class="card" href="../papers/02.html">
+    <div class="card-num">02</div>
+    <h3>A Systematic Review of the Literature on Digital Transformation</h3>
+    <div class="card-meta">
+      <span>Hanelt, A., Bohnsack, R., Marz, D., &amp; Antunes Marante, C.</span><br>
+      Journal of Management Studies, 58(5)（2021）
+    </div>
+    <div class="card-body">
+      279本の論文を体系的にレビューし、DXにより企業は<strong>継続的適応を可能にする「可変的組織デザイン」</strong>へ移行していることを示した。
+    </div>
+  </a>
+
+  <a class="card" href="../papers/06.html">
+    <div class="card-num">06</div>
+    <h3>Organizational Learning and Innovation: A Bibliometric Analysis</h3>
+    <div class="card-meta">
+      <span>Hael, M., Belhaj, F.A., &amp; Zhang, H.</span><br>
+      Heliyon, 10(11)（2024）
+    </div>
+    <div class="card-body">
+      1982〜2023年の773本を計量書誌学的に分析。<strong>ナレッジマネジメント、ダイナミック・ケイパビリティ</strong>など8概念との結びつきを発見。
+    </div>
+  </a>
+
+  <a class="card" href="../papers/09.html">
+    <div class="card-num">09</div>
+    <h3>Organization Design: Current Insights and Future Research Directions</h3>
+    <div class="card-meta">
+      <span>Joseph, J. &amp; Sengul, M.</span><br>
+      Journal of Management, 51(1)（2025）
+    </div>
+    <div class="card-body">
+      2000〜2023年の組織デザイン研究をレビューし、<strong>AIと意思決定、フラット組織</strong>など新興領域を指摘。
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  <p>組織開発 注目論文10選</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+組織開発（Organizational Development）に関する注目論文 10選
+=============================================================
+
+1. Successful Organizational Change: Integrating the Management Practice and Scholarly Literatures
+-----------------------------------------------------------------------------------------------
+著者: Stouten, J., Rousseau, D. M., & De Cremer, D.
+掲載: Academy of Management Annals, 12, 752-788 (2018)
+URL: https://journals.aom.org/doi/10.5465/annals.2016.0095
+
+実務家向けの変革モデルと学術研究の両方を統合し、計画的組織変革を成功させるための
+10のエビデンスベースのステップを提示。広く使われているKotterモデルなどが専門家の
+意見に依拠しがちな一方、学術的エビデンスとの乖離を指摘し、「何がわかっていて、
+何が未検証か」を整理した、組織変革研究の集大成的レビュー。
+
+
+2. A Systematic Review of the Literature on Digital Transformation: Insights and Implications for Strategy and Organizational Change
+-----------------------------------------------------------------------------------------------------------------------------------
+著者: Hanelt, A., Bohnsack, R., Marz, D., & Antunes Marante, C.
+掲載: Journal of Management Studies, 58(5), 1159-1197 (2021)
+URL: https://onlinelibrary.wiley.com/doi/10.1111/joms.12639
+
+279本の論文を体系的にレビューし、デジタルトランスフォーメーション（DX）が組織変革
+に与える影響を分析。DXにより企業は継続的適応を可能にする「可変的な組織デザイン」
+へ移行しており、デジタルビジネスエコシステムに組み込まれていることを示した。
+従来の組織変革フレームワークではDXの本質を部分的にしか捉えられないと指摘。
+
+
+3. Reactions Towards Organizational Change: A Systematic Literature Review
+--------------------------------------------------------------------------
+著者: Khaw, K.W., Alnoor, A., AL-Abrrow, H., Tiberius, V., Ganesan, Y., & Atshan, N.A.
+掲載: Current Psychology (2022)
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9006211/
+
+79本の査読論文を分析し、組織変革に対する個人・組織レベルの反応を体系化。反応は
+「発言(voice)」「離脱(exit)」「無視(neglect)」「忠誠(loyalty)」の4パターンに分類。
+変革型リーダーシップが受容を促進すること、否定的反応を「建設的批判」として
+再解釈する視点を提案。
+
+
+4. Change Management: From Theory to Practice
+----------------------------------------------
+著者: Phillips, J. & Klein, J.D.
+掲載: TechTrends, 67(1), 189-197 (2022)
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9462626/
+
+16の変革管理モデルから15の共通戦略を抽出し、49名の実務家に調査。最も重要な戦略は
+コミュニケーション、ステークホルダーの巻き込み、組織文化への配慮、ミッション・
+ビジョンとの整合、インセンティブの5つ。学術的推奨と実務家の行動に顕著なギャップが
+あることを発見。
+
+
+5. Organizational Development as Generative Entrenchment
+---------------------------------------------------------
+著者: Moser, C. & Smaldino, P.E.
+掲載: Entropy, 24(7), 879 (2022)
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC9318524/
+
+発生生物学の「生成的固定化（generative entrenchment）」概念を組織開発に応用した
+理論的論文。創業初期の構造的決定が後の組織成長を制約するというメカニズムを提示。
+成功した組織テンプレートが業界を超えて模倣される「文化伝達」プロセスも説明し、
+組織構造の収斂現象に進化論的視点からアプローチ。
+
+
+6. Organizational Learning and Innovation: A Bibliometric Analysis and Future Research Agenda
+----------------------------------------------------------------------------------------------
+著者: Hael, M., Belhaj, F.A., & Zhang, H.
+掲載: Heliyon, 10(11) (2024)
+URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC11152712/
+
+1982年〜2023年の773本の論文をビブリオメトリクス分析。組織学習とイノベーションの
+関連分野として知識管理、吸収能力、変革型リーダーシップ、ダイナミック・ケイパビリティ
+の8概念との強い結びつきを発見。2020年に出版数がピーク（75本）に達し、近年は
+イノベーション・パフォーマンス、両利きの経営、ビジネスモデル・イノベーションに
+注目がシフト。
+
+
+7. The Determinants of Organizational Change Management Success: Literature Review and Case Study
+--------------------------------------------------------------------------------------------------
+著者: Errida, A. & Lotfi, B.
+掲載: International Journal of Engineering Business Management, 13 (2021)
+URL: https://journals.sagepub.com/doi/10.1177/18479790211016273
+
+37の組織変革モデルを詳細分析し、変革成功に影響する要因を12カテゴリーに整理。
+モロッコの建設企業での2つの変革事例で実証検証。文献レビューと実践的アクション
+リサーチを組み合わせた手法で、変革管理の成功要因を統合的に理解するための
+フレームワークを提供。
+
+
+8. The Psychological Conditions for Employee Engagement in Organizational Change: Test of a Change Engagement Model
+---------------------------------------------------------------------------------------------------------------------
+掲載: Frontiers in Psychology (2023)
+URL: https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1071924/full
+
+組織変革における従業員エンゲージメントの心理的条件を検証。変革関連の自己効力感、
+心理的安全性、仕事の意義深さが変革エンゲージメントに直接的効果を持ち、分散の
+88%を説明。心理的安全性が高い環境では、従業員が革新的な行動に積極的に取り組む
+ことを実証。
+
+
+9. Organization Design: Current Insights and Future Research Directions
+------------------------------------------------------------------------
+著者: Joseph, J. & Sengul, M.
+掲載: Journal of Management, 51(1) (2025)
+URL: https://journals.sagepub.com/doi/10.1177/01492063241271242
+
+2000年〜2023年の組織デザイン研究を包括的にレビュー。構成(configuration)、
+統制(control)、方向づけ(channelization)、調整(coordination)の4つの主要アプローチを
+特定。新興領域としてAIと組織的意思決定、フラット組織、複数目標の追求を指摘し、
+組織デザインの理論的基盤を再整理。
+
+
+10. OD Consulting as a Catalyst for Change
+-------------------------------------------
+著者: Dryzin-Amit, Y.
+掲載: Journal of Applied Behavioral Science (2025)
+URL: https://journals.sagepub.com/doi/10.1177/00218863251376151
+
+イスラエルの大規模公共セクター組織で6年間の縦断的調査（67回のインタビュー、
+2018-2024年のフィールド観察）を実施。ODコンサルティングが持続可能な変革を
+促進する3つのメカニズムを特定：(1) 適応的空間の創出、(2) 創発的能力の体系的開発、
+(3) システム的統合の実現。構成主義的グラウンデッド・セオリーを用いた質的研究。
+
+
+=============================================================
+近年の組織開発研究の主要トレンド
+=============================================================
+
+- デジタルトランスフォーメーションと組織変革の融合
+- 心理的安全性とエンゲージメントの科学的解明
+- エビデンスベースの変革管理（理論と実務のギャップ解消）
+- AI・フラット組織など新しい組織デザインの探究
+- 進化論・複雑系など学際的アプローチの導入
+
+=============================================================
+作成日: 2026年2月23日
