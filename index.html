@@ -17,10 +17,10 @@
 
   /* ── hero ── */
   .hero{
-    min-height:60vh;
+    min-height:30vh;
     display:flex;flex-direction:column;align-items:center;justify-content:center;
     text-align:center;
-    padding:4rem 1.5rem;
+    padding:2rem 1.5rem;
     background:linear-gradient(165deg,#0b0e17 0%,#141829 40%,#1a1040 70%,#0b0e17 100%);
     position:relative;overflow:hidden;
   }
@@ -53,7 +53,7 @@
     max-width:600px;font-size:1.05rem;color:#94a3b8;
   }
   .scroll-hint{
-    margin-top:2.5rem;animation:bounce 2s infinite;
+    margin-top:1.2rem;animation:bounce 2s infinite;
     color:#6366f1;font-size:1.4rem;cursor:pointer;
   }
   @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
@@ -168,7 +168,7 @@
 
   /* ── responsive ── */
   @media(max-width:700px){
-    .hero{min-height:50vh;padding:3rem 1.2rem}
+    .hero{min-height:auto;padding:1.5rem 1.2rem}
     section{padding:3rem 1rem}
     .cards{grid-template-columns:1fr;gap:1.2rem}
     .card{padding:1.5rem 1.3rem}
